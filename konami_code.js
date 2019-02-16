@@ -1,7 +1,8 @@
 function init() {
   // Write your JavaScript code inside the init() function
   const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-  const input = document.addEventListener('keydown', onKeyDownHandler(event))
+  const input = document.querySelector('input')
+  input.addEventListener('keydown', onKeyDownHandler(event))
 
   // Keep track of index outside of the event handler.
   let index = 0;
@@ -22,5 +23,4 @@ function init() {
       index = 0;
     }
   }
-
 }
